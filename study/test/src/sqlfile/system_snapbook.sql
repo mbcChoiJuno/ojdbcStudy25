@@ -1,0 +1,7 @@
+CREATE USER mbcacademy IDENTIFIED BY mbcacademy;
+
+GRANT RESOURCE, CONNECT TO mbcacademy;
+
+ALTER USER mbcacademy DEFAULT TABLESPACE users;
+
+ALTER USER mbcacademy TEMPORARY TABLESPACE temp;
