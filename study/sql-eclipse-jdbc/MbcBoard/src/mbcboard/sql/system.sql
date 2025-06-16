@@ -1,0 +1,7 @@
+CREATE USER boardtest IDENTIFIED BY boardtest;
+
+GRANT RESOURCE, CONNECT TO boardtest;
+
+ALTER USER boardtest DEFAULT TABLESPACE users;
+
+ALTER USER boardtest TEMPORARY TABLESPACE temp;
